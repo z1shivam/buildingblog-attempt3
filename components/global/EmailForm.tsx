@@ -51,7 +51,7 @@ export function EmailForm(){
                 <Input placeholder="Your Name" {...field} className="bg-white h-12 dark:bg-slate-800 dark:border-2 dark:border-slate-600 placeholder:text-base"/>
               </FormControl>
 
-              <FormMessage />
+              <FormMessage className="text-red-100"/>
             </FormItem>
           )}
         />
@@ -64,7 +64,7 @@ export function EmailForm(){
               <FormControl>
                 <Input placeholder="yourname@email.com" {...field} className="bg-white h-12 dark:bg-slate-800 dark:border-2 dark:border-slate-600 placeholder:text-base"/>
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-100"/>
             </FormItem>
           )}
         />
