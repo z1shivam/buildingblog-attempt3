@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/global/Header";
 import { ThemeProvider } from "@/components/global/ThemeProvider";
+import Footer from "@/components/global/Footer";
 
 const os = Open_Sans({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

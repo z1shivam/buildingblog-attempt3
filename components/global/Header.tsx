@@ -5,6 +5,7 @@ import { IoClose, IoMenu } from "react-icons/io5";
 import { DarkModeToggle } from "./DarkModeToggle";
 import MobileNav from "./MobileNav";
 import DesktopNav from "./DesktopNav";
+import { cn } from "@/lib/utils";
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -15,10 +16,15 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 h-14 z-50 w-full bg-gray-900 dark:bg-gray-900 text-white">
-        <div className="flex justify-between  items-center h-full max-w-7xl mx-auto ">
-          <MainLogo className="rounded-md hover:bg-gray-700 px-3" />
-          <div className="flex h-full justify-center items-center gap-2 md:hidden px-3">
+      <header
+        className={cn(
+          "fixed top-0 z-50 h-14 w-full border-gray-700 bg-gray-900 text-white dark:bg-gray-900",
+          isDropdownOpen ? "border-none" : "border-b-2",
+        )}
+      >
+        <div className="mx-auto flex h-full max-w-7xl items-center justify-between">
+          <MainLogo className="rounded-md px-3 hover:bg-gray-700 sm:px-5 md:px-3" />
+          <div className="flex h-full items-center justify-center gap-2 px-3 sm:px-5 md:hidden">
             <DarkModeToggle />
             <div className="" onClick={toggleDropdown}>
               {!isDropdownOpen ? (
@@ -34,10 +40,10 @@ export default function Header() {
         </div>
       </header>
       <div
-        className={`fixed top-14 z-40 w-full md:hidden transition-transform duration-300 ${
+        className={`fixed top-14 z-40 w-full transition-transform duration-300 md:hidden ${
           isDropdownOpen
-            ? "transform translate-y-0"
-            : "transform -translate-y-full"
+            ? "translate-y-0 transform"
+            : "-translate-y-full transform"
         }`}
       >
         <MobileNav />

@@ -1,3 +1,13 @@
+import HeroHome from "@/components/Home/HeroHome";
+import LatestPosts from "@/components/Home/LatestPosts";
+import FullWidthEmailSignup from "@/components/global/FWEmailSignup";
+
 export default function Home() {
-  return <main>Shivam can code! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum quae accusantium atque ab? Doloremque facilis, odit tenetur fuga at molestiae corrupti iste repellendus praesentium maxime laborum, veniam, ipsum explicabo expedita perferendis dolores. Suscipit, vitae ad temporibus nesciunt nam sit. Esse vitae dicta itaque perspiciatis corrupti totam ipsam ea et. Sapiente minus doloribus accusantium fuga doloremque neque est id soluta sit iste tempora repellendus sint, corrupti aliquid officiis sed omnis quod modi nam qui? Natus nemo, quisquam reiciendis deleniti veniam velit, nostrum possimus nesciunt eligendi dolorum consequuntur temporibus facere corrupti eaque nisi, accusantium id sed assumenda officia ipsam? Id ratione neque magni nam maxime quis distinctio aspernatur quasi, exercitationem officiis doloribus architecto adipisci. Saepe tempore qui, ea cupiditate dolor blanditiis voluptates quae nostrum quaerat adipisci ipsa expedita amet sint in repellat repellendus odit vel sapiente eum consectetur fuga aperiam dolores! Itaque, facere. Totam vero, natus nemo fugit optio, illum nam error ut cumque, hic nesciunt molestiae ex nihil voluptas non? Iste, eaque culpa dignissimos esse quisquam voluptates reprehenderit inventore debitis facilis nemo ipsa vitae, reiciendis eius quibusdam consequatur rerum commodi nobis impedit! At, laborum maxime! Doloribus repellendus obcaecati ratione molestiae sed atque molestias at vero labore tenetur. Sint possimus dicta eos optio nam eveniet, itaque id voluptatibus sequi quisquam, corporis autem ab non laudantium praesentium tempore! Provident ipsum officiis similique voluptatem molestias, asperiores, aliquid blanditiis tempore et optio rerum ducimus in doloremque non natus facilis aperiam esse! Fugiat a deserunt eum sequi quos quod et, excepturi aliquid iure placeat quaerat accusamus ullam, neque nostrum nihil ducimus perspiciatis officiis? Perspiciatis maxime illo ad exercitationem quae. Voluptas numquam, ipsa voluptatibus esse accusamus quis hic dignissimos repudiandae placeat perferendis inventore reiciendis eius quam nesciunt commodi quisquam iste quidem! Ex, blanditiis. Eaque beatae optio mollitia pariatur nemo quisquam ducimus voluptates, similique sint sunt quasi?</main>;
+  return (
+    <main className="">
+      <HeroHome />
+      <LatestPosts />
+      <FullWidthEmailSignup />
+    </main>
+  );
 }

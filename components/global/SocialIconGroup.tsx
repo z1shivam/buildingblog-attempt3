@@ -15,11 +15,11 @@ export default function SocialIconGroup({
   icon = defaultSocialIcons,
 }: i_SocialIconGroup) {
   return (
-    <div className="flex space-x-8 justify-center py-3">
+    <div className="flex space-x-8 py-3">
       {icon.map((icon) => {
         const Icon = icon.icon;
         return (
-          <a href={icon.href}>
+          <a href={icon.href} key={icon.href}>
             <Icon className="size-7" />
           </a>
         );

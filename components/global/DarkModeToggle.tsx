@@ -15,15 +15,15 @@ export function DarkModeToggle() {
         onClick={() => setTheme("dark")}
         variant="outline"
         size="icon"
-        className="bg-inherit border-none shadow-none hover:bg-gray-700 hover:text-white dark:hidden pr-1 w-12 h-12"
+        className="h-12 w-12 border-none bg-inherit pr-1 shadow-none hover:bg-gray-700 hover:text-white dark:hidden"
       >
-        <IoSunny className=" absolute h-6 w-6" />
+        <IoSunny className="absolute h-6 w-6" />
       </Button>
       <Button
         onClick={() => setTheme("light")}
         variant="outline"
         size="icon"
-        className="dark:bg-inherit dark:border-none dark:hover:bg-gray-950 hover:text-white hidden dark:flex items-center justify-center w-12 h-12 dark:shadow-none "
+        className="hidden h-12 w-12 items-center justify-center hover:text-white dark:flex dark:border-none dark:bg-inherit dark:shadow-none dark:hover:bg-gray-950"
       >
         <MdNightsStay className="absolute h-6 w-6" />
       </Button>
