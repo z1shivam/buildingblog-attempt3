@@ -49,7 +49,7 @@ const HeroHome = () => {
                 <h2 className="px-1 text-2xl text-orange-400">
                   {defaultHeroHomeText.line1}
                 </h2>
-                <h1 className="bg-gradient-to-tr from-violet-200 to-pink-200 bg-clip-text text-6xl font-bold text-transparent pb-4">
+                <h1 className="bg-gradient-to-tr from-violet-200 to-pink-200 bg-clip-text pb-4 text-6xl font-bold text-transparent">
                   {defaultHeroHomeText.line2}
                 </h1>
               </div>
