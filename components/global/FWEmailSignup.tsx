@@ -8,8 +8,8 @@ const cv = Caveat({
 });
 
 export interface i_NewsletterTemplate {
-  heading: string;
-  subHeading: string;
+  heading?: string;
+  subHeading?: string;
 }
 
 export default function FullWidthEmailSignup({

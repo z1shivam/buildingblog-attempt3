@@ -1,4 +1,5 @@
 import { i_HeroHomeText } from "@/components/Home/HeroHome";
+import { i_CategoryItem } from "@/components/global/ExploreCategories";
 import { i_NewsletterTemplate } from "@/components/global/FWEmailSignup";
 import { i_FooterItem } from "@/components/global/Footer";
 import { FeaturedPost, MenuItem } from "@/components/global/MobileNav";
@@ -14,16 +15,35 @@ import {
 import { MdExplore, MdTipsAndUpdates } from "react-icons/md";
 
 export const logoText = "Shivam Kumar";
-export const searchPlaceholder = "Search this site..."
+export const searchPlaceholder = "Search this site...";
 export const defaultHeroHomeText: i_HeroHomeText = {
   line1: "Hi, I am a",
-  line2: "FullStack Developer"
-}
+  line2: "FullStack Developer",
+};
 
-export const defaultNewsLetterComponent:i_NewsletterTemplate = {
+export const defaultNewsLetterComponent: i_NewsletterTemplate = {
   heading: "Email Newsletter",
-  subHeading: "Keep updated with tech!"
-}
+  subHeading: "Keep updated with tech!",
+};
+
+export const defaultExploreMoreContent: i_CategoryItem[] = [
+  {
+    heading: "Learn To Code",
+    image: "https://picsum.photos/seed/p7/1280/720"
+  },
+  {
+    heading: "Latest In Tech",
+    image: "https://picsum.photos/seed/p8/1280/720"
+  },
+  {
+    heading: "Learn To Code",
+    image: "https://picsum.photos/seed/p9/1280/720"
+  },
+  {
+    heading: "Learn To Code",
+    image: "https://picsum.photos/seed/p11/1280/720"
+  },
+];
 
 export const defaultMenuItems: MenuItem[] = [
   {
