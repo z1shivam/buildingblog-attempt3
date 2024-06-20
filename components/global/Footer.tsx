@@ -26,7 +26,7 @@ const TopColumn = () => {
 export default function Footer() {
   return (
     <footer className=" w-full bg-gray-900 text-white py-3 border-t-2 border-gray-700">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <TopColumn />
         <Separator className="bg-gray-700 dark:bg-gray-700" />
         <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-6">

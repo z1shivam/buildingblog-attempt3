@@ -1,4 +1,5 @@
 import { i_HeroHomeText } from "@/components/Home/HeroHome";
+import { i_NewsletterTemplate } from "@/components/global/FWEmailSignup";
 import { i_FooterItem } from "@/components/global/Footer";
 import { FeaturedPost, MenuItem } from "@/components/global/MobileNav";
 import { i_SocialIcon } from "@/components/global/SocialIconGroup";
@@ -17,6 +18,11 @@ export const searchPlaceholder = "Search this site..."
 export const defaultHeroHomeText: i_HeroHomeText = {
   line1: "Hi, I am a",
   line2: "FullStack Developer"
+}
+
+export const defaultNewsLetterComponent:i_NewsletterTemplate = {
+  heading: "Email Newsletter",
+  subHeading: "Keep updated with tech!"
 }
 
 export const defaultMenuItems: MenuItem[] = [

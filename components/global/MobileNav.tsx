@@ -18,11 +18,13 @@ export interface FeaturedPost {
 export interface MobileNavProps {
   menuItems?: MenuItem[];
   featuredPosts?: FeaturedPost[];
+  onChildClick?: any
 }
 
 const MobileNav = ({
   menuItems = defaultMenuItems,
   featuredPosts = defaultFeaturedPosts,
+  onChildClick
 }: MobileNavProps) => {
   return (
     <nav className="space-y-4 bg-gray-900 py-4 text-white dark:bg-gray-900 border-b-2 border-gray-700">
@@ -34,6 +36,7 @@ const MobileNav = ({
               <li
                 key={item.href}
                 className="flex items-center justify-center gap-2.5 rounded-md bg-gray-800 py-4 hover:text-orange-400"
+                onClick={onChildClick}
               >
                 <Icon className="size-5" />
                 {item.title}
@@ -50,7 +53,8 @@ const MobileNav = ({
           <ul className="flex flex-col gap-1.5">
             {featuredPosts.map((post) => (
               <Link href={post.slug} key={post.slug}>
-                <li className="flex items-center gap-x-2 rounded-md p-1.5 font-medium text-orange-400 transition-colors hover:bg-gray-800 hover:underline">
+                <li className="flex items-center gap-x-2 rounded-md p-1.5 font-medium text-orange-400 transition-colors hover:bg-gray-800 hover:underline"
+                onClick={onChildClick}>
                   <CgNotes className="text-lg text-gray-400" />
                   {post.title}
                 </li>
@@ -59,7 +63,7 @@ const MobileNav = ({
           </ul>
         </div>
       )}
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center" onClick={onChildClick}>
         <h3 className="text-center text-sm text-gray-400">connect with me</h3>
         <SocialIconGroup />
       </div>

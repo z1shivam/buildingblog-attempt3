@@ -22,7 +22,7 @@ export default function LatestPosts({
   let numOfEl = 0;
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-4 sm:px-7">
+    <section className="mx-auto max-w-7xl px-3 py-4 sm:px-7">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold text-orange-500 dark:text-orange-400">
           Latest Posts
@@ -53,7 +53,7 @@ export default function LatestPosts({
             <li
               key={post.slug}
               className={cn(
-                "cursor-pointer rounded-md border-2 border-transparent px-1 hover:border-orange-300 hover:bg-orange-50 dark:hover:border-gray-700 dark:hover:bg-gray-900 sm:p-3",
+                "cursor-pointer rounded-md border-2 border-transparent p-1 hover:border-orange-300 hover:bg-orange-50 dark:hover:border-gray-700 dark:hover:bg-gray-900 sm:p-3",
                 numOfEl > 4 ? classNameToLimit : ""
               )}
             >

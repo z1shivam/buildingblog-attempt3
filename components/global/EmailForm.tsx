@@ -47,11 +47,11 @@ export function EmailForm(){
           render={({ field }) => (
             <FormItem className="">
               <FormLabel className="text-base text-orange-100">Enter your name:</FormLabel>
+              <FormMessage className="text-red-100"/>
               <FormControl>
                 <Input placeholder="Your Name" {...field} className="bg-white h-12 dark:bg-slate-800 dark:border-2 dark:border-slate-600 placeholder:text-base"/>
               </FormControl>
 
-              <FormMessage className="text-red-100"/>
             </FormItem>
           )}
         />
@@ -61,14 +61,14 @@ export function EmailForm(){
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-base text-orange-100">Enter your email:</FormLabel>
+              <FormMessage className="text-red-100"/>
               <FormControl>
                 <Input placeholder="yourname@email.com" {...field} className="bg-white h-12 dark:bg-slate-800 dark:border-2 dark:border-slate-600 placeholder:text-base"/>
               </FormControl>
-              <FormMessage className="text-red-100"/>
             </FormItem>
           )}
         />
-        <Button type="submit" size={"lg"} className="bg-gray-900 h-12 w-full dark:text-white sm:w-fit">Submit</Button>
+        <Button type="submit" size={"lg"} className="bg-gray-800 h-12 w-full dark:text-white sm:w-fit">Submit</Button>
       </form>
     </Form>
   )

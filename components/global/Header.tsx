@@ -46,7 +46,7 @@ export default function Header() {
             : "-translate-y-full transform"
         }`}
       >
-        <MobileNav />
+        <MobileNav onChildClick={toggleDropdown}/>
       </div>
     </>
   );
