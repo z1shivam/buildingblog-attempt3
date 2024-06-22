@@ -7,3 +7,5 @@ This is such a great learning, Just treat code below and above return statement 
 Also, do not write typescript. I was writing too much types. Typescript is made to make your life easier, not complex. Avoid writing types. Let typescript infer types and prevent you to do silly mistakes. Your user is not going to see the types you wrote. 
 
 It's okay if you ship code without proper types. Typescirpt should be your last headache.
+
+Build logic first, create design later. 
