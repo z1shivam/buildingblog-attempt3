@@ -21,6 +21,7 @@ export default function LatestPosts({
 }: i_LatestPosts) {
   let numOfEl = 0;
 
+
   return (
     <section className="mx-auto max-w-7xl px-3 py-4 sm:px-7">
       <div className="flex items-center justify-between">

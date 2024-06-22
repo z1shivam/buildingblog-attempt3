@@ -13,7 +13,7 @@ export default function NotFound() {
       <p className="text-sm font-bold font-mono bg-red-100 dark:bg-red-900 border border-red-400 px-2 py-0.5 rounded-md">
         Error Code - 404
       </p>
-  
+
         <Button variant={"destructive"} asChild>
         <Link href={"/"}>
           <FaArrowLeft className="size-3 mr-2" />
